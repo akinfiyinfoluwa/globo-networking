@@ -9,9 +9,9 @@ variable "region" {
 }
 
 variable "environment" {
-  type = string
+  type        = string
   description = "Environment for all of resources"
-  default = "development"
+  default     = "development"
 }
 
 variable "prefix" {
