@@ -25,7 +25,7 @@ variable "cidr_block" {
 }
 variable "billing_code" {
   type    = string
-  default = "(Required) Billing Code for network resources"
+  default = "(Required) Billing Code for network resources we need"
 }
 variable "public_subnets" {
   type        = map(string)
