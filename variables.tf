@@ -11,13 +11,11 @@ variable "region" {
 variable "environment" {
   type        = string
   description = "Environment for all of resources"
-  default     = "development"
 }
 
 variable "prefix" {
   type        = string
   description = "(Optional) Prefix to use for all resources in this module. Default: globo-dev"
-  default     = "globo-dev"
 }
 
 variable "cidr_block" {
