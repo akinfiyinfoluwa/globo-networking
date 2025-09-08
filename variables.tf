@@ -6,6 +6,7 @@ variable "region" {
   type        = string
   description = "(Optional) AWS Region to use. Default: us-east-1"
   default     = "us-east-1"
+
 }
 
 variable "environment" {
@@ -21,14 +22,14 @@ variable "prefix" {
 variable "cidr_block" {
   type        = string
   description = "(Optional) The CIDR block for the VPC. Default:10.42.0.0/16"
+
 }
 variable "billing_code" {
   type        = string
-  description = "(Required) Billing Code for network resources"
+  description = "(Required) Billing Code for network resources we need"
 }
 variable "public_subnets" {
   type        = map(string)
   description = "(Optional) Map of public subnets to create with CIDR blocks. Key will be used as subnet name with prefix. Default: {subnet-1 ="
-
 }
 
