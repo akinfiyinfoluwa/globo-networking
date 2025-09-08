@@ -24,7 +24,7 @@ variable "cidr_block" {
   type        = string
   description = "(Optional) The CIDR block for the VPC. Default:10.42.0.0/16"
   default     = "10.42.0.0/16"
-}
+} 
 variable "billing_code" {
   type    = string
   default = "(Required) Billing Code for network resources"
